@@ -1,0 +1,37 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Css Sibling</title>
+<style>
+ul.parent1 >  li {
+border: 1px solid #000;
+}
+ul.parent2 li {
+border: 1px solid #000;
+}
+</style>
+</head>
+
+<body>
+<ul class="parent1">
+<li class="child">pakai ></li>
+<li class="child">item 2
+<ul>
+<li>Nested Item one</li>
+<li>Nested Item two</li>
+</ul>
+</li>
+</ul>
+<ul class="parent2">
+<li class="child">tidak pakai ></li>
+<li class="child">item 2
+<ul>
+<li>Nested Item one</li>
+<li>Nested Item two</li>
+</ul>
+</li>
+</ul>
+</body>
+</html>
